@@ -336,7 +336,7 @@ footer {
         padding: 0;
     }
 
-    #times div {
+    #times > div {
         width: 100%;
         clear: both;
         height: 150px;
@@ -349,7 +349,7 @@ footer {
 }
 
 /* For medium screens sizes from 950px wide and down */
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
 
     #menu{
         clear: left;
@@ -359,38 +359,38 @@ footer {
         line-height: 25px;
     }
 
-    #cover-text{
-        left:0px;
+    #cover-text {
+        left: 0;
     }
 
-    #club-ethos{
+    #club-ethos {
         width:90%;
         height: 1200px;
         margin: 0 auto;
     }
 
-    .left-about-heading, .right-about-heading{
+    .left-about-heading, .right-about-heading {
         width: inherit;
     }
 
-    .left-about-heading h2, .right-about-heading h2{
+    .left-about-heading h2, .right-about-heading h2 {
         width: 100%;
         text-align: center;
     }
 
-    .left-about-heading p, .right-about-heading p{
+    .left-about-heading p, .right-about-heading p {
         text-align: center;
-        padding: 0 20px 0 20px;
+        padding: 0 20px;
     }
 
-    #photo{
+    #photos {
         column-count: 3;
     }
 }
 
 /* For small screens sizes from 800px wide and down */
-@media screen and (max-width: 800px){
-    #photo{
+@media screen and (max-width: 800px) {
+    #photos {
         column-count: 2;
     }
 }
