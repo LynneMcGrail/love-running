@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 *{
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
-body{
+body {
     font-family: Lato, sans-serif;
+    font-weight: 300;
     color: #3a3a3a;
 }
 
 /* headings and logo */
 
-h1, h2{
+h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
 }
 
-#logo{
+#logo {
     float: left;
     font-size: 280%;
     margin-left: 30px;
@@ -28,12 +29,12 @@ h1, h2{
 
 /* navigation links */
 
-#menu{
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
 
-#logo, #menu{
+#menu, #logo {
     line-height: 75px;
 }
 
@@ -48,27 +49,31 @@ h1, h2{
     color: inherit;
 }
 
-#menu a:hover{
+#menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
 
-.active{
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
 
 /* Hero image and cover text */
 
-#hero-outer{
+#hero-outer {
     height:600px;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-#hero-image{
-    height:600px;
+#cover-text, #cover-text h2 {
+    color: #ffffff;
+}
+
+#hero-image {
+    height: 600px;
     width: 100%;
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
+    background: url('../images/hero-image.webp') no-repeat center center;
 
     /* Animates zoom effect on loading the page */
     animation-name: hero-zoom;
@@ -86,13 +91,9 @@ h1, h2{
     }
 }
 
-#cover-text, #cover-text h2 {
-    color: #ffffff;
-}
-
 #cover-text {
     font-size: 130%;
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
@@ -111,13 +112,13 @@ h1, h2{
 
 }
 
-/* Club ethos */
+/* club ethos */
 
-#club-ethos{
+#club-ethos {
     height: 600px;
 }
 
-#left-about{
+#left-about {
     padding-top: 30px;
     width: 33%;
     float: left;
@@ -156,19 +157,20 @@ hr {
     margin-bottom: 50px;
 }
 
-.right-about-heading p {
-    text-align: right;
-}
-
 .right-about-heading h2 {
     text-align: right;
 }
 
+.right-about-heading p {
+    text-align: right;
+}
+
+
 /* Club ethos center image */
 
 #welcome {
-    margin: 20px 0;
     text-align: center;
+    margin: 20px 0;
     font-size: 280%;
 }
 
@@ -177,22 +179,22 @@ hr {
     height: 300px;
     padding: 30px;
     border-style: solid;
-    border-color: #cccccc;
+    border-color: #ccc;
     border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
 }
 
 #circle-cover-bg {
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
+    background: url('../images/ethos-center-image.jpeg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
 /* Event times */
 
-#times{
-    background-image: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
+#times {
+    background-image: url('../images/times-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -202,7 +204,7 @@ hr {
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0,0,0, .6);
+    background-color: rgba(0, 0, 0, .6);
     width: 20%;
     height: 300px;
     float: left;
@@ -218,36 +220,35 @@ hr {
 
 /* Footer */
 
-footer{
+footer {
     height: 150px;
 }
 
-.social-networks{
+.social-networks {
     text-align: center;
-
 }
 
-.social-networks li{
+.social-networks > li {
     display: inline;
 }
 
-.social-networks i{
+.social-networks i {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
     color: #3a3a3a;
 }
 
-/* Gallery Photos */
+/* gallery */
 
-#photo {
+#photos {
     clear: both;
     line-height: 0;
     column-count: 4;
     column-gap: 0px;
 }
 
-#photo img{
+#photos > img {
     width: 100%;
 }
 
@@ -310,7 +311,7 @@ footer{
 /* Media queries */
 
 /* For large to medium screens sizes from 1200px wide and down */
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     #club-ethos{
         width: 65%;
         height: 1200px;
@@ -328,7 +329,7 @@ footer{
         padding: 0;
     }
 
-    #center-about{
+    #center-about {
         clear: both;
         width: 100%;
         float: left;
